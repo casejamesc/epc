@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Museo';
+  src: url('../fonts/Museo300-Regular-webfont.eot');
+  src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
+       url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/Museo300-Regular-webfont.svg#Museo') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+.tester-pg {
+
+	* {
+		/*outline: 1px solid red;*/
+	}
+
+	div {
+		background-color: orange;
+	}
+
+	p {
+		// font-weight: bold;
+	}
+
+	h2 {
+		font-size: 34px;
+		font-family: 'Museo', Times;
+		font-weight: normal;
+	}
+
+	.neg-m p {
+		// margin-left: -10px;
+	}
+
+	.c2 {
+		border-radius: 30px;
+	}
+
+	.list-container {
+		padding: 10px;
+		background-color: hsl(180,50%,50%);
+		margin: 50px 0;
+		border: 2px solid hsla(0,0%,0%,.5);
+		border-radius: 10px;
+		box-shadow: 0 0 15px hsla(0,0%,0%,1);
+	}
+
+	ul {
+		float: right;
+		background: white;
+	}
+
+	li {
+		float: left;
+		margin-left: 15px;
+		width: 150px;
+		padding: 10px;
+		background-color: hsl(218, 79.5276%, 24.9020%);
+		box-shadow: inset 0 0 6px hsla(0,0%,100%,.8);
+		border-radius: 15px;
+	}
+
+	li:first-of-type {
+		margin-left: 0;
+	}
+
+	li:nth-of-type(odd) {
+		background: hsla(240,50%,50%,.8);
+	}
+
+	li a {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		font-size: 17px;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-variant: small-caps;
+		border: 1px solid transparent;
+		transition: .5s all ease-out;
+	}
+
+	li a:hover {
+		background: hsla(195, 82.7273%, 56%, .5);
+		border: 1px solid hsl(195, 82.7273%, 86%);
+		border-radius: 20px;
+	}
+
+	.circle {
+		float: right;
+		width: 30px;
+		height: 30px;
+		border-radius: 20px;
+		background-color: red;
+	}
+
+	.padded-div {
+		width: 200px;
+		background: hsl(0,0%,20%);
+	}
+
+	.padded-div p {
+		margin: 40px;
+		display: inline-block;
+		width: 150px;
+		border: 1px solid white;
+		background: url(../images/tweed-bg.png) no-repeat;
+	}
+
+	.anchor-test {
+		border: 1px solid green;
+		display: inline-block;
+		width: 200px;
+		text-align: center;
+	}
+
+	.anchor-test img {
+		/*vertical-align: middle; */
+		border: 1px solid red;
+	}
+	span {
+		border: 1px solid orange;
+		padding: 30px;
+		margin-left: 40px;
+	}
+	span:after {
+		content: "After";
+		border: 1px solid pink;
+		margin-left: 10px;
+	}
+
+	.red {
+		clear: both;
+		width: 400px;
+		background: red;
+		height: 40px;
+		float: left;
+	}
+
+	.green {
+		clear: both;
+		background: green;
+		height: 40px;
+		margin-top: -20px;
+	}
+
+	.c {
+		border: 1px solid black;
+	}
+
+	.c1 {
+		margin: 50px 0;
+		padding: 10px;
+		background-color: red;
+		// position: absolute;
+		width: 600px;
+	}
+
+	.flange {
+		position: absolute;
+		top: 0;
+		right: -50px;
+		width: 30px;
+		height: 100px;
+		background: hsl(0, 0%, 100%);
+	}
+
+	.c2 {
+		padding: 30px;
+		background-color: green;
+	}
+
+	.c3 {
+		padding: 20px;
+		background-color: blue;
+	}
+
+	.c4 {
+		padding: 10px;
+		background-color: yellow;
+	}
+
+	.c5 {
+		padding: 30px;
+		background-color: orange;
+	}
+
+	.bi-tester {
+		font-family: 'Droid Sans Mono';
+		background: hsl(0, 0%, 100%);
+	}
+
+	.b {
+		font-weight: bold;
+	}
+
+	.i {
+		font-style: italic;
+	}
+	.shrink {
+		white-space: nowrap;
+		margin-top: 100px;
+		color: white;
+		margin-right: 30px;
+		display: block;
+		background: blue;
+		overflow: hidden;
+	}
+	body, .sticky-wrapper {
+		min-width: 0 !important;
+	}
+}

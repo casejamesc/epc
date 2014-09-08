@@ -1,0 +1,409 @@
+.cartlb .fancybox-skin {
+	border: 3px solid white;
+	border-radius: 10px;
+	background: url(../images/bg-diag.png);
+}
+
+/*====== MAIN ======*/
+#cartlb-content {
+	display: none;
+	position: relative;
+	overflow: visible;
+
+	/*====== SECTIONS ======*/
+	section {
+		margin-bottom: 10px;
+		// color: hsl(0,0%,23%);
+	}
+
+	header {
+		position: relative;
+		height: 40px;
+		border: 1px solid hsl(206, 26.8%, 23.7%);
+		border-radius: 10px 10px 0 0;
+		color: hsl(0, 0%, 76%); 
+		background-image: url(../images/bg-grey-velvet.png);
+		box-shadow: inset 0 0 2px hsla(0,0%,100%,.3);
+		transition: .3s all ease-out; 
+	}
+
+	h2 {
+		float: left;
+		width: 530px;
+		height: 40px;
+		line-height: 40px;
+		padding-left: 75px;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.customer-info h2 {
+		width: 330px;
+	}
+
+	.section-summary {
+		display: none;
+		text-transform: none;
+		letter-spacing: 0;
+		font-style: italic;
+	}
+
+	.header-item:hover, header .active {
+		color: white;
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 44%, 25%)), to(hsl(200, 33%, 40%)));
+		background: -webkit-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: -moz-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: -o-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: linear-gradient(0deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+	}
+
+	.arrow {
+		position: absolute;
+		left: 30px;
+		top: 15px;
+		height: 11px;
+		transition: .3s all ease-out; 
+	}
+
+	.spacer {
+		float: right;
+		width: 1px;
+		height: 40px;
+		background: hsl(206, 26.8%, 20%);
+		box-shadow: 0 0 1px hsla(0,0%,100%,.2);
+	}
+
+	.section-content {
+		border: 3px solid white;
+		border-top: none;
+		border-radius: 0 0 10px 10px;
+		overflow: hidden;
+		background-color: hsl(0,0%,90%);
+	}
+
+	table {
+		width: 97%;
+		margin: 15px auto;
+		border-collapse: collapse;	
+		text-align: left;
+	}
+
+	thead {
+		border-bottom: 1px solid hsl(0, 0%, 78%);
+		box-shadow: 0 1px hsl(0,0%,100%);
+	}
+
+	tbody {
+		padding-top: 3px;
+	}
+
+	th {
+		height: 35px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: hsl(0, 0%, 25%);
+	}
+
+	td {
+		height: 40px;
+		border: none;
+		color: hsl(0, 0%, 35%);
+	}
+
+	/*====== CUSTOMER-INFO ======*/
+	.recent-vehicles {
+		float: right;
+		width: 205px;
+	}
+
+	.recent-vehicles .exp-trigger {
+		height: 40px;
+		line-height: 40px;
+		width: 155px;
+		padding-left: 15px;
+		padding-right: 35px;
+		color: hsl(0, 0%, 76%); 
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px;
+		cursor: pointer;
+	}
+
+	.recent-vehicles .exp-trigger:hover {
+		color: white;
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px, -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 44%, 25%)), to(hsl(200, 33%, 40%))) 0 0;
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px, -webkit-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%) 0 0;
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px, -moz-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%) 0 0;
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px, -o-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%) 0 0;
+		background: url('../images/arrow-hollow-down.png') no-repeat 170px 7px, linear-gradient(0deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%) 0 0;
+	}
+
+	.recent-vehicles .exp-content {
+		display: none;
+		top: 41px;
+		left: -1px;
+		width: 205px;
+		border: 1px solid hsl(206, 26.8%, 20%);
+		border-top: none;
+		border-radius: 0 0 6px 6px;
+		overflow: hidden;
+		background-image: url(../images/bg-grey-velvet.png);
+		box-shadow: inset 0 0px 2px hsla(0,0%,100%,.3);
+	}
+
+	.recent-vehicles li:hover {	
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 44%, 25%)), to(hsl(200, 33%, 40%)));
+		background: -webkit-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: -moz-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: -o-linear-gradient(90deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+		background: linear-gradient(0deg, hsl(205, 44%, 25%) 0%, hsl(200, 33%, 40%) 100%);
+	}
+
+	/*cant just use a bottom-border on <a>, bc li background must appear inside border */
+	.recent-vehicles li.seperator {
+		margin: 0 15px;
+		height: 1px;
+		background-color: hsl(208, 13%, 33%);
+	}
+
+	.recent-vehicles li:hover a {
+		color: white;	
+	}
+
+	.recent-vehicles li a {
+		display: block;
+		height: 40px;
+		line-height: 40px;
+		margin: 0 16px;
+		text-align: left;
+		color: hsl(0, 0%, 76%);
+	} 
+
+	.vin {
+		float: right;
+		position: relative;
+	}
+
+
+	.corner {
+		border-radius: 0 10px 0 0;
+	}
+
+	.collapsed {
+		border-radius: 0 10px 10px 0;
+	}
+
+	.vin-input {
+		width: 150px;
+		height: 40px;
+		line-height: 40px;
+		padding-left: 55px;
+		// font-size: 15px;
+		color: hsl(0,0%,90%);
+		background: transparent;
+	}
+
+	div.vin-select {
+		position: absolute;
+		top: 8px;
+		left: 15px;
+	}
+
+	.customer-info table {
+		width: 91%;
+	}
+
+	.customer-info .custom-form-element {
+		width: 200px;
+	}
+
+
+	.customer-info tr:first-of-type {
+		margin-bottom: 10px;
+	}
+
+	.customer-info td:nth-of-type(2) {
+		text-align: center;
+	}
+
+	.customer-info td:last-of-type {
+		text-align: right;
+	}
+
+	/*====== LABOR ======*/
+	.add {
+		float: right;
+		width: 205px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		color: hsl(0, 0%, 76%); 
+	}
+
+	.parts .photo {
+		text-align: center;
+		width: 70px;
+	}
+
+	.parts .delete {
+		text-align: center;
+		width: 70px;
+	}
+
+	.parts .part {
+		width: 160px;
+	}
+
+	.parts td.part {
+		color: hsl(352, 91%, 25%);
+	}
+
+	.parts .part-n {
+		text-align: left;
+	}
+
+	.ihlb-btn {
+		text-decoration: underline;
+		color: hsl(218, 65%, 36%);
+	}
+
+	.parts .qty, .parts .price, .parts .total, .parts .order-part  {
+		text-align: right;
+		width: 100px;
+	}
+
+	.parts .qty {
+		width: 100px;
+	}
+
+	.qty .custom-form-element {
+		width: 30px;
+		text-align: right;
+	}
+
+	.subtotal-label {
+		font-weight: 600;
+		color: hsl(0, 0%, 27%);
+	}
+
+	.subtotal {
+		font-weight: 600;
+		color: hsl(0, 0%, 27%);
+		text-align: right;
+	}
+
+	/*====== LABOR ======*/
+	.labor-link-wrapper {
+		float: right;
+		margin-right: 0;
+	}
+
+	.labor-link {
+		display: inline-block;
+		width: 205px;
+		line-height: 40px;
+		box-shadow: -1px 0 hsl(212, 15%, 30%), 1px 0 hsl(212, 15%, 15%);
+		text-align: center;
+		text-transform: none;
+		color: hsl(0, 0%, 76%);
+	}
+
+	.labor .blank {
+		width: 70px;
+	}
+
+	.labor .procedure {
+		width: 160px;
+	}
+
+	.labor .qty, .labor .price, .labor .total {
+		text-align: right;
+		width: 100px;
+	}
+
+	/*====== RECS ======*/
+	.recs h3 {
+		padding-bottom: 8px;
+	}
+
+	.recs .h-list li:last-of-type {
+		text-align: center;
+	}
+
+	.rec {
+		padding: 20px;
+		border-bottom: 1px solid hsl(0,0%,78%);
+		border-top: 1px solid hsl(0,0%,100%);
+	}
+
+	.rec .col {
+		float: left;
+	}
+
+	.rec .col1 {
+		width: 180px;
+		padding-left: 20px;
+	}
+
+	.rec .col2 {
+		width: 470px;
+	}
+
+	.rec .col3 {
+		width: 70px;
+	}
+
+	.photo-select {
+		border: 3px solid white;
+		border-radius: 6px;
+		overflow: hidden;
+	}
+
+	.rec-description {
+		font-size: 15px;
+	}
+
+	/*====== ORDER DETAILS ======*/
+	.order-details {
+		width: 91%;
+		margin: 30px auto;
+	}
+
+	.order-details .custom-form-element {
+		width: calc(100% - 12px);
+		width: -moz-calc(100% - 12px);
+	}
+
+	.po {
+		margin-bottom: 7px;
+	}
+
+	.comment {
+		min-width: calc(100% - 12px);
+		max-width: -moz-calc(100% - 12px);
+		height: 75px;
+		min-height: 75px;
+		max-height: 75px;
+	}
+
+	/*====== BUTTONS ======*/
+	.buttons-wrapper {
+		height: 40px;
+	}
+
+	.save-btn, .order-btn {
+		float: right;
+	}
+
+	.save-btn {
+		margin-right: 10px;
+	}
+
+	.send-btn, .preview-btn {
+		float: left;
+	}
+
+	.send-btn {
+		margin-left: 10px;
+	}
+
+}

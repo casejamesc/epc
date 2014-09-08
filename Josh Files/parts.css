@@ -1,0 +1,633 @@
+/* =============== BY ELEMENT ============== */
+body, .sticky-wrapper {	
+  background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(213, 28%, 30%, .4)), to(hsla(213, 28%, 30%, .4))), url(../images/bg-tweed.png) repeat;
+  background: -webkit-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-tweed.png) repeat;
+  background: -moz-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-tweed.png) repeat;
+  background: -o-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-tweed.png) repeat;
+  background: linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-tweed.png) repeat;
+}
+
+/* ================================ HEADER ================================ */
+.main-header, .main-header a {
+	text-decoration: underline;
+	color: hsl(212, 24%, 70%);
+}
+
+.main-header a:hover {
+	color: white;
+}
+
+.vendor-logo {
+	float: left;
+	width: 152px;
+	padding: 5px 0 0 40px;
+}
+
+.sidekick-logo {
+	float: right;
+	height: 115px;
+	padding: 0 10px 0 0;
+}
+
+.main-header .wrapper {
+	float: left;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.main-header .connection-details p {
+	font-size: 11px;
+	margin-bottom: 1px;
+	text-align: left;
+}
+
+.main-header .nav1 a {
+	font-size: 11px;
+}
+
+.main-header .nav2 {
+	float: right;
+	padding: 52px 12px 0 0;
+}
+
+.main-header .nav2 li {
+	padding: 0 3px;
+}
+
+.main-header .nav2 a {
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	width: 110px;
+	border: 1px solid white;
+	border-bottom: 1px solid hsl(210, 56%, 34%);
+	border-radius: 4px 4px 0 0;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 13px;
+	font-variant: small-caps;
+	text-decoration: none;
+	color: hsl(217, 100%, 95%);
+	background: -moz-linear-gradient(90deg, hsl(210, 56%, 34%) 0%, hsl(218, 66%, 19%) 100%);
+}
+
+/* ================================ MAIN ================================ */
+.main {
+	position: relative;
+	padding: 30px 0 17px 30px;
+}
+
+/* ================ TOOLBOX-DROPDOWN ============== */
+.toolbox {
+	z-index: 100;
+	position: absolute; /*relative to .main*/
+	left: 10px;
+	top: 33px;
+	width: 250px;
+	text-shadow: 0px 1px hsl(0,0%,40%);
+}
+
+.toolbox .pending-icon {
+	position: absolute;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+	width: 20px;
+	top: -8px;
+	right: -8px;
+	font-size: 11px;
+	color: white;
+	background: url(../images/pending.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.toolbox .pending-number {
+	position: absolute;
+	width: 20px;
+	top: 10px;
+	right: 25px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: white;
+	cursor: pointer;
+}
+
+.toolbox-btn {
+	display: block;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid hsl(5, 64%, 43%);
+	border-radius: 4px 4px 0 4px;
+	box-shadow: 0px 1px 6px 0px hsl(340, 5%, 12%);
+	font-size: 18px;
+	background-color: hsl(351, 97%, 25%);
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(351, 97%, 25%)), to(hsl(4, 65%, 44%)));
+	background: -webkit-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: -moz-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: -o-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: linear-gradient(0deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	color: white;
+}
+
+.toolbox-btn .logo-sm {
+	margin: 0 20px -4px 10px;
+}
+
+.toolbox-btn .arrow {
+	margin-left: 20px;
+	transition: all .2s ease;
+	-webkit-transition: all .2s ease;	
+}
+
+.toolbox-dropdown {
+	display: none;
+	z-index: 100;
+	float: right;
+	margin-right: 1px;
+	width: 190px;
+	padding: 20px 0;
+	border-radius: 0 0 6px 6px;
+	box-shadow: 0 0 20px hsla(0, 0%, 0%, .5);
+	
+	background-color: hsl(351, 97%, 25%);
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(351, 97%, 25%)), to(hsl(4, 65%, 44%)));
+	background: -webkit-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: -moz-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: -o-linear-gradient(90deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+	background: linear-gradient(0deg, hsl(351, 97%, 25%) 0%, hsl(4, 65%, 44%) 100%);
+}
+
+.toolbox-dropdown li.seperator {
+	height: 0;
+	margin: 6px 0;
+	border-bottom: 1px solid hsl(357, 100%, 37%);
+	border-top: 1px solid hsl(357, 100%, 29%);
+}
+
+.toolbox-dropdown li.sep2 {
+	border-bottom: 1px solid hsl(357, 100%, 32%);
+	border-top: 1px solid hsl(357, 100%, 24%);
+}
+
+.toolbox-dropdown li.manager {
+	position: relative;
+}
+
+.toolbox-dropdown li a {
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	width: 160px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: white;	
+}
+
+.toolbox-dropdown li a:hover {	
+	border-radius: 5px;
+	box-shadow: inset 0px 2px 10px hsla(0, 0%, 5%, .5);
+}
+
+/* ================ MAIN-CONTENT ============== */
+/*contains everything but right-sidebar*/
+.main-content-w-topbar {
+	position: relative; /*to position cart, search, history dropdowns*/
+	float: left;
+	width: 85%;
+	width: calc(100% - 150px);
+	width: -webkit-calc(100% - 150px);
+	border: 3px solid white;
+	box-shadow: 0 0 20px hsl(0,0%,0%);
+}
+
+/* ======== TOPBAR ======== */
+.topbar {
+	background-color: hsla(0, 0%, 44%, .5);
+}
+
+.topbar-btn {
+	float: right;
+	height: 48px;
+	border-left: 1px solid hsl(0, 0%, 30%);
+	border-right: 1px solid hsl(0, 0%, 47%);
+	font-size: 14px;
+}
+
+.topbar-btn:hover, .topbar-btn.active, .search-dropdown {
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(218, 0%, 16%)), to(hsl(205, 0%, 28%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: linear-gradient(0deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+}
+
+.topbar input {
+	font-size: 15px;
+	color: hsl(0, 0%, 66%);
+	background-color: transparent;
+}
+
+/* ====== SEARCH & DROPDOWN ====== */
+.search {
+	display: inline-block;
+	width: 60px;
+	box-shadow: -1px 0 hsl(0, 0%, 47%);
+	text-align: center;
+}
+
+.search img {
+	height: 30px;
+	margin-top: 10px;
+}
+
+.search-dropdown {
+	z-index: 100;
+	display: none;
+	position: absolute;
+	top: 48px;
+	right: 302px;
+	width: 264px;
+	height: 48px;
+	padding-left: 10px;
+	border-radius: 0 0 6px 6px;
+	border: 1px solid hsl(0, 0%, 66%);
+	color: white;
+}
+
+/* ====== RECENT-HISTORY & DROPDOWN ====== */
+.history-a-vin {
+	position: relative;
+	float: right;
+}
+
+.history {
+	padding-left: 10px;
+	width: 200px;
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px;
+	cursor: pointer;
+}
+
+.history.active {
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px;
+}
+
+.history:hover {
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px, -webkit-gradient(linear, 0 100%, 0 0, from(hsl(218, 0%, 16%)), to(hsl(205, 0%, 28%)));
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px, -webkit-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px, -moz-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px, -o-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background: url('../images/arrow-hollow-down.png') no-repeat 180px 10px, linear-gradient(0deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+}
+
+.history-dropdown {
+	display: none;
+	z-index: 100;
+	position: absolute; /*relative to #history-a-vin*/
+	top: 48px;
+	left: -1px;
+	width: 212px;
+	border: 1px solid hsl(0, 0%, 66%);
+	border-radius: 0 0 6px 6px;
+	overflow: hidden;
+	background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(0, 0%, 44%, .5)), to(hsla(0, 0%, 44%, .5))), url(../images/bg-tweed.png) repeat;
+	background: -webkit-linear-gradient(90deg, hsla(0, 0%, 44%, .5) 0%, hsla(0, 0%, 44%, .5) 100%), url(../images/bg-tweed.png) repeat;
+	background: -moz-linear-gradient(90deg, hsla(0, 0%, 44%, .5) 0%, hsla(0, 0%, 44%, .5) 100%), url(../images/bg-tweed.png) repeat;
+	background: -o-linear-gradient(90deg, hsla(0, 0%, 44%, .5) 0%, hsla(0, 0%, 44%, .5) 100%), url(../images/bg-tweed.png) repeat;
+	background: linear-gradient(0deg, hsla(0, 0%, 44%, .5) 0%, hsla(0, 0%, 44%, .5) 100%), url(../images/bg-tweed.png) repeat;
+	background: -moz-linear-gradient(90deg, hsla(207, 4.6%, 38%, .9) 0%, hsla(207, 4.6%, 38%, .9) 100%), url(../images/bg-tweed.png) repeat;
+}
+
+.history-dropdown li.seperator {
+	height: 0;
+	margin: 0 15px;
+	border-top: 1px dashed hsl(0, 0%, 50%);
+	background-color: transparent;
+}
+
+.history-dropdown li a {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	width: 211px;
+	margin: 0 auto;
+	text-align: left;
+	text-indent: 12px;
+	font-size: 16px;
+	color: hsl(0, 0%, 66%);
+}
+
+.history-dropdown li a:hover {	
+	color: white;	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(218, 0%, 16%)), to(hsl(205, 0%, 28%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%);
+	background-image: linear-gradient(0deg, hsl(218, 0%, 16%) 0%, hsl(205, 0%, 28%) 100%); 
+}
+
+/* ====== VIN ====== */
+.vin {
+	padding-left: 50px;
+	width: 190px;
+}
+
+a.vin-link {
+	position: absolute;
+	left: 223px;
+	top: 15px;
+}
+
+a.vin-link img {
+	width: 25px;
+	height: auto;
+}
+
+/* ====== CART & DROPDOWN ====== */
+.cart {
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+	border-right: none;
+}
+
+.cart img {
+	margin-top: 10px;
+}
+
+/* ======== MAIN-CONTENT ======== */
+.main-content {
+	min-height: 460px;
+	background-color: hsl(0, 0%, 84%);
+}
+
+.content-ext {
+	position: absolute; /*relative to right-panel*/
+	left: -4px;
+	width: 153px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	text-indent: -18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: hsl(2, 66%, 39%);
+	background: url(../images/content-ext.png) no-repeat;
+}
+
+/* ======== BREADCRUMBS ======== */
+.breadcrumbs {
+	width: 94%;
+	margin: 0 auto;
+	padding: 20px 0 7px 0;
+}
+
+.category-pg .vehicle-crumbs, .sub-category-pg .vehicle-crumbs, .part-type-pg .vehicle-crumbs, .conditions-pg .vehicle-crumbs, .parts-select-pg .vehicle-crumbs {
+	float: right;
+	margin-right: 10px;
+}
+
+.crumbs-label {
+	display: inline-block;
+	margin-left: 10px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 14px;
+	color: hsl(0, 0%, 20%);
+}
+
+.category-pg .vehicle-crumbs .crumbs-label, .sub-category-pg .vehicle-crumbs .crumbs-label, .part-type-pg .vehicle-crumbs .crumbs-label, .conditions-pg .vehicle-crumbs .crumbs-label, .parts-select-pg .vehicle-crumbs span.crumbs-label {
+	margin-left: 0; /*without this, the float runs out of room!*/
+}
+
+.breadcrumbs ul {
+	display: inline-block;
+	margin-left: 7px;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	padding-left: 8px;	
+}
+
+.breadcrumbs li:after {
+	margin-left: 10px;
+	content: ">";
+	color: hsl(0, 0%, 47%);
+}
+
+.breadcrumbs li:last-of-type:after {
+	content: "";
+}
+
+.breadcrumbs a {
+	display: inline-block;	
+	height: 18px;
+	line-height: 18px;
+	padding: 5px 0px;
+	font-size: 14px;
+	color: hsl(218, 65%, 36%);
+}
+
+.breadcrumbs a.non-link {
+	color: hsl(218, 15%, 60%);
+}
+
+/* ================ TABLE ============== */
+.main-table-wrapper {
+	z-index: 2;
+	position: relative; /*adjust shadow up a little*/
+	width: 94%;
+	margin: 0 auto;
+	border: 1px solid hsl(0, 0%, 57%);
+	border-radius: 6px;
+	overflow: hidden;
+	background-clip: padding-box;
+}
+
+.main-table {	
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.main-table a {
+	display: block;
+	height: 56px;
+	line-height: 56px;
+	color: hsl(0, 0%, 35%);	
+}
+
+.main-table tr:nth-of-type(even) {
+	background-color: hsl(0, 0%, 96%);
+}
+
+.main-table tr:nth-of-type(odd) {
+	background-color: hsl(0, 0%, 92%);
+}
+
+.main-table a:hover, .main-table a.active {
+	box-shadow: inset 0px 0px 2px hsla(0, 0%, 0%, .8);
+	color: white;
+	background: url(../images/glow-blue.png) no-repeat 50% 0, url(../images/bg-tweed-blue.png);
+	background-size: 100% auto, auto auto;
+}
+
+.main-table td {
+	border: 1px solid hsl(0, 0%, 87%);	
+	overflow: hidden;	
+	text-align: center;
+	font-size: 16px; /*needed to set height of a td element!!?*/	
+}
+
+/*======== HEADER-ROW ========*/
+.main-table thead tr {
+	height: 24px;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 76%);
+	background-image: url(../images/bg-table-header.png);	
+}
+
+.main-table th {
+	padding: 8px 8px;
+	border: none; /*this isnt doing anything. Why aren't there borders in the header area? lines show at different zooms*/
+	text-align: left;
+	font-weight: normal;	
+}
+
+.main-table-shadow {
+	z-index: 1;
+	position: relative;
+	top: -2px; /*shadow too intense without this, top hidden behind table*/
+	width: 94%;
+	margin: 0 auto;
+}
+
+/* ======== BUTTONS AROUND TABLE ======= */
+/*a.above-table {
+	position: relative;
+	top: 0px;
+	float: right;
+	margin: 0 0 15px 20px;
+}*/
+
+.below-table-btn {
+	float: right;
+	margin: 0 3% 15px 0;
+}
+
+/* ================ RIGHT-PANEL ============== */
+.right-sidebar {
+	position: relative; /*position content-ext*/
+	float: left; 
+	width: 125px;	
+	height: 490px;
+	margin-top: 20px;
+	border-width: 2px 2px 2px 0; 
+	border-style: solid;
+	border-radius: 0 5px 5px 0;
+	font-size: 14px;
+	color: white;
+	background-color: hsla(0, 0%, 44%, .5);
+}
+
+.right-sidebar li {
+	height: 53px;
+	line-height: 53px;
+	text-align: center;
+}
+
+.right-sidebar li a {
+	vertical-align: middle; /*vertical centering*/
+	margin: 0 auto;	
+}
+
+.right-sidebar li:nth-of-type(n+2) a {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: white;	
+}
+
+.right-sidebar li a.non-link {
+	color: hsl(0,0%,70%);
+}
+
+.right-sidebar a.start {
+	box-shadow: 0 0 4px 0 hsla(0, 0%, 0%, .5);
+}
+
+/* ================ PER-PAGE ============== */
+.year-pg .content-ext {
+	top: 42px;	
+}
+.make-pg .content-ext {
+	top: 95px;
+}
+.model-pg .content-ext {
+	top: 148px;	
+}
+.category-pg .content-ext {
+	top: 201px;
+}
+.sub-category-pg .content-ext {
+	top: 254px;
+}
+.part-type-pg .content-ext {
+	top: 307px;
+}
+.conditions-pg .content-ext {
+	top: 360px;
+}
+.parts-select-pg .content-ext {
+	top: 413px;
+}
+.recs-pg .content-ext {
+	top: 466px;
+}
+
+.year-pg .main-table a {
+	height: 55px;
+	line-height: 55px;
+}
+.make-pg .main-table a {
+	height: 65px;
+	line-height: 65px;
+}
+.model-pg .main-table a {
+	height: 41px;
+	line-height: 41px;
+}
+.category-pg .main-table a {
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+.sub-category-pg .main-table a {
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+.part-type-pg .main-table a {
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+/*#parts-select table#main-table a {
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+}*/
+
+.year-pg .cart-dropdown {
+	width: 700px;
+}
+
+/*finish this*/
+@media (max-width: 1250px) {
+	.year-pg .main-table a { 
+		font-size: 15px;
+	}
+
+}

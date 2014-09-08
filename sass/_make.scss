@@ -1,0 +1,15 @@
+@import "compass";
+
+$icons: sprite-map("auto-logos/*.png");
+
+i {
+  background: $icons;
+  display: inline-block;
+}
+
+@each $i in sprite_names($icons) {
+  .icn-#{$i} {
+    background-position: sprite-position($icons, $i);
+    @include sprite-dimensions($icons, $i);
+  }
+}

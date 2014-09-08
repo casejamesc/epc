@@ -1,0 +1,160 @@
+/*======== CILB LIGHTBOX ========*/
+.cilb .fancybox-skin {
+	background: url(../images/bg-diag.png);
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#cilb-content {
+	display: none;
+
+	h2 {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		font-size: 17px;
+		font-weight: normal;
+		letter-spacing: 1px;
+		color: hsl(226, 23%, 99%);
+		background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 40%, 45%)), to(hsl(205, 40%, 65%)));
+		background-image: -webkit-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: -moz-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: -o-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: linear-gradient(0deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+	}
+
+	.content {
+		padding: 25px 40px;
+		border: 3px solid white;
+		border-top: none;
+		border-radius: 0 0 10px 10px;
+		overflow: hidden;
+		background-color: hsl(0,0%,90%);
+	}
+
+	.row {
+		margin-bottom: 10px;
+	}
+
+	.row label {
+		display: block;
+		width: 55px;
+		height: 30px;
+		line-height: 30px;
+		margin-left: 0;
+		color: hsl(0,0%,40%);
+	}
+
+	.row > * {
+		float: left;
+		margin-left: 5px;
+	}
+
+	div.vin-select {
+		margin-top: 2px;
+		background: url(../images/icon-vin-app-g.png) no-repeat 1px -1px;
+		background-size: 100% auto;
+	}
+
+	.vin-input {
+		float: left;
+		width: 220px;
+	}
+
+	.name-input { 
+		width: 119px;
+	}
+
+	.phone-input {
+		width: 256px;
+	}
+
+	/* ====== BOTTOM BUTTONS ====== */
+	.bottom-buttons {
+		margin-top: 18px;
+	}
+
+	.checkin-area .button {
+		float: right;
+	}
+
+	.checkin-area .new, .checkin-area .cancel {
+		margin-right: 12px;
+	}
+
+	/* ====== MATCHES EXPANSION ====== */
+	.matches-expansion {
+		display: none;
+		padding-top: 30px;
+		border-top: 1px solid hsl(0, 0%, 97%);
+		margin-top: 30px; /*space only appears below checkin-area when expanded*/
+		box-shadow: 0 -1px hsl(0, 0%, 77%);
+	}
+
+	.matches {
+		border: 1px solid hsl(0, 0%, 75%);
+		background-color: hsl(0, 0%, 95%);
+	}
+
+	.matches>li {
+		position: relative; /*to position options*/
+		display: block;
+		padding: 10px 15px;
+		border-bottom: 1px solid hsl(0, 0%, 75%);
+		color: hsl(0,0%,25%);
+		cursor: pointer;
+	}
+
+	.matches>li:last-of-type {
+		border-bottom: none;
+	}
+
+	.matches>li.active {
+		box-shadow: inset 0px 0px 2px hsla(0, 0%, 0%, .8);
+		color: hsla(0,0%,100%,.8);
+		background: url(../images/glow-blue.png) no-repeat 50% 0, url(../images/bg-tweed-blue.png);
+		background-size: 100% auto, auto auto;
+	}
+
+	.matches h4 {
+		margin-bottom: 3px;
+		font-weight: 400;
+	}
+
+	.matches p {
+		font-size: 14px;
+		font-style: italic;
+	}
+
+	.options {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+
+	.options a {
+		font-size: 14px;
+		font-style: italic;
+		color: hsl(0,0%,25%);
+	}
+
+	.options a:hover {
+		text-decoration: underline;
+	}
+
+	.matches>li.active .options a {
+		color: hsla(0,0%,100%,.8);
+		border-color: hsla(0,0%,100%,.8); 
+	}
+
+	.matches-expansion .cancel {
+		float: left; 
+	}
+
+	.matches-expansion .check-in {
+		float: right;
+	}
+
+}

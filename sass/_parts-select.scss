@@ -1,0 +1,231 @@
+/* ================ TABLE ============== */
+/*======== GENERAL TD/TR ========*/
+.parts-select-pg {
+
+	.main-table td {
+		padding: 14px 8px;
+		text-align: left;
+		border: none;
+	}
+
+	/*this kind of fix's bottom left corner in Safari*/
+	.main-table-wrapper {
+		overflow: hidden;	
+	}
+
+	.main-table tr:hover:not(.mfr):not(.header-row) {
+		background-color: hsla(213, 97%, 85%, .3);
+	}
+
+	.main-table tr:active:not(.mfr):not(.header-row) {
+		background-color: hsl(213, 97%, 85%);
+	}
+
+	/*======== HEADER-ROW ========*/
+	.main-table thead tr {
+		height: 44px;
+		text-transform: uppercase;
+		color: hsl(0, 0%, 76%);
+		background-image: url(../images/bg-table-header.png);
+		overflow: hidden;	
+	}
+
+	.main-table th {
+		padding: 8px 8px;
+		border: none; /*this isnt doing anything. Why aren't there borders in the header area? lines show at different zooms*/
+		text-align: left;
+	}
+
+	.main-table th:first-of-type, .main-table td:first-of-type {
+		padding: 0 8px 0 15px;
+	}
+
+	/*======== MFR-ROWS ========*/
+	.main-table tr.mfr td {
+		/*moved below to try and fix Safari*/
+		border: none;
+		box-shadow: inset 0 0 0 1px hsl(206, 36%, 4%), inset 0 0 0 2px hsl(208, 11%, 36%);
+		color: white;
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(0, 0%, 75%, .1)), to(hsla(0, 0%, 75%, .1))), url(../images/bg-table-header.png);
+		background: -webkit-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: -moz-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: -o-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: linear-gradient(0deg, hsla(0, 0%, 75%, .5) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+	}
+
+	.main-table tr.mfr td {
+		height: 24px;
+		padding-left: 8px;
+	}
+
+	/*======== COLUMN-STYLES ========*/
+	.part-description {
+		padding-top: 5px;
+		font-size: 12px;
+		font-weight: 400;
+		color: hsl(0, 0%, 20%);
+	}
+
+	.main-table a.ihlb-btn {
+		width: auto;
+		height: 23px;
+		line-height: 23px;
+		color: hsl(218, 65%, 36%);
+	}
+
+	.main-table a.ihlb-btn:hover {
+		background: none;
+		box-shadow: none;
+		color: hsl(218, 65%, 36%);
+	}
+
+	.main-table .order-col {
+		text-align: center;
+	}
+
+	.qty {
+		width: 40px;
+		background: transparent;
+	}
+
+	/*======== B0TTOM BUTTON ========*/
+	.view-cart {		
+		float: right;
+		margin: 0 3% 15px 0;
+	}
+
+	/*======== B0TTOM BUTTON ========*/
+	.conditions {
+		position: relative; /*adjust shadow up a little*/
+		z-index: 2;
+		overflow: hidden;
+		width: 94%;
+		margin: 0 auto;
+		border-radius: 7px;
+		border: 1px solid hsl(0, 0%, 57%);
+		border-top: none;
+		margin-bottom: 20px;
+		
+		header {
+			height: 44px;
+			line-height: 44px;
+			padding-left: 70px;
+			border-radius: 7px 7px 0 0;		
+			overflow: hidden;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 16px;
+			border-top: 1px solid hsl(0, 0%, 60%);
+			color: hsl(0, 0%, 35%);
+			background-image: url(../images/bg-table-header.png);
+			background: hsl(0, 0%, 94%);
+			box-shadow: inset 0 0 4px hsla(0, 0%, 0%, .15);
+		}
+
+		.content {
+			padding: 12px;
+			box-shadow: inset 0 10px 23px hsla(0, 0%, 0%, .6);
+			background: url(../images/bg.png);
+			background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(213, 18%, 40%, .5)), to(hsla(213, 18%, 40%, .5))), url(../images/bg-tweed.png) repeat;
+			background: -webkit-linear-gradient(90deg, hsla(213, 18%, 40%, .5) 0%, hsla(213, 18%, 40%, .5) 100%), url(../images/bg-tweed.png) repeat;
+			background: -moz-linear-gradient(90deg, hsla(213, 18%, 40%, .5) 0%, hsla(213, 18%, 40%, .5) 100%), url(../images/bg-tweed.png) repeat;
+			background: -o-linear-gradient(90deg, hsla(213, 18%, 40%, .5) 0%, hsla(213, 18%, 40%, .5) 100%), url(../images/bg-tweed.png) repeat;
+			background: linear-gradient(0deg, hsla(213, 18%, 40%, .5) 0%, hsla(213, 18%, 40%, .5) 100%), url(../images/bg-tweed.png) repeat;
+		}
+
+		.condition {	
+			float: left;
+			margin: 0 auto;
+			margin-left: 12px;
+			border-radius: 7px;
+			overflow: hidden;
+			box-shadow: 0 0 13px hsla(0, 0%, 0%, 0.7);
+		}
+
+		.condition:first-of-type {
+			margin-left: 0;
+		}
+		
+		.condition .convex-shadow {
+			opacity: .9;
+		}
+
+		.header-area {
+			color: hsl(0, 0%, 76%);
+		}
+
+		.header-area h3 {
+			height: 26px;
+			line-height: 26px;
+			padding-left: 10px;
+			border-radius: 7px 7px 0 0;
+			overflow: hidden;
+			font-size: 16px;
+			color: hsla(0, 0%, 100%, .9);
+			// box-shadow: inset 0 0 0 1px hsl(206, 36%, 4%), inset 0 0 0 2px hsl(208, 11%, 36%);
+			// box-shadow: inset 0 0 2px hsl(208, 11%, 46%);
+			// box-shadow: inset 0 0 0 1px hsl(206, 36%, 24%), inset 0 0 0 2px hsl(208, 11%, 36%);
+			// background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, .20) 0%, hsla(0, 0%, 100%, .15) 100%), url(../images/bg-table-header.png);
+			// background: -moz-linear-gradient(90deg, hsla(353, 92%, 26%, .7) 0%, hsla(5, 64%, 43%, .7) 100%), url(../images/bg-table-header.png);
+			background: hsl(60, 5%, 68%);
+		}
+
+		.options {
+			min-width: 150px;
+			height: 160px;
+			// padding: 5px 0;
+			// border: 1px solid hsl(0, 0%, 57%);
+			// border-top: none;
+			border-radius: 0 0 7px 7px;
+			color: hsl(0, 0%, 15%);
+			background-color: hsl(0, 0%, 96%);
+		}
+
+		.options li {
+			border-bottom: 1px solid hsl(0, 0%, 85%);
+		}
+
+		.options li:first-of-type {
+			// border-top: 1px solid hsl(0, 0%, 85%);
+		}
+
+		.options li:nth-of-type(even) {
+			background-color: hsl(0, 0%, 92%);
+		}
+
+		.options label {
+			display: block;
+			padding: 0 10px;
+			// margin-top: 3px;
+			// padding: 3px 0 3px 5px;
+		}
+
+		div.custom-radio {
+			display: block;
+			width: auto;
+			height: 31px;
+			line-height: 31px;
+			// padding: 4px 0;
+			background: transparent;
+		}
+
+		input.custom-radio {
+			position: absolute;
+			width: 10px;
+			height: 10px;
+		}
+
+		div.custom-radio.checked {
+			background: hsl(207, 71%, 57%);
+			color: hsl(0, 0%, 95%);
+			box-shadow: inset 0 2px 3px 1px hsla(0, 0%, 0%, .35);
+		}
+	}
+
+}
+
+
+
+
+
+

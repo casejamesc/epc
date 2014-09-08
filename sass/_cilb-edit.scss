@@ -1,0 +1,115 @@
+/*====== CILB-EDIT LIGHTBOX======*/
+.cilb .fancybox-skin {
+	position: relative; /*to position .notice*/
+	background: url(../images/bg-diag.png);
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
+#cilb-content-edit {
+	display: none;
+
+	h2 {
+		height: 40px;
+		line-height: 40px;
+		padding-left: 20px;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		font-size: 17px;
+		font-weight: normal;
+		letter-spacing: 1px;
+		color: hsl(226, 23%, 99%);
+		background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 40%, 45%)), to(hsl(205, 40%, 65%)));
+		background-image: -webkit-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: -moz-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: -o-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+		background-image: linear-gradient(0deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+	}
+
+	.content {
+		padding: 25px 40px;
+		border: 3px solid white;
+		border-top: none;
+		border-radius: 0 0 10px 10px;
+		overflow: hidden;
+		background-color: hsl(0,0%,90%);
+	}
+
+	.row {
+		margin-bottom: 10px;
+	}
+
+	.row label {
+		display: block;
+		width: 55px;
+		height: 30px;
+		line-height: 30px;
+		margin-left: 0;
+		color: hsl(0,0%,40%);
+	}
+
+	.row > * {
+		float: left;
+		margin-left: 5px;
+	}
+
+	div.vin-select {
+		margin-top: 2px;
+		background: url(../images/icon-vin-app-g.png) no-repeat 1px -1px;
+		background-size: 100% auto;
+	}
+
+	.vin-input {
+		float: left;
+		width: 220px;
+	}
+
+	.name-input {
+		width: 119px;
+	}
+
+	.phone-input {
+		width: 256px;
+	}
+
+	/* ====== BOTTOM BUTTONS ====== */
+	.bottom-buttons {
+		margin-top: 18px;
+	}
+
+	.save {
+		float: right;
+	}
+
+	.cancel {
+		float: left;
+	}
+
+	/* ====== NOTICE ====== */
+	.notice {
+		display: none;
+		position: absolute;
+		top: 48px;
+		left: 43px;
+		width: 250px;
+		padding: 20px 40px;
+		background-color: hsl(0, 0%, 60%);
+		border: 3px solid white;
+		border-radius: 10px;
+	}
+
+	.notice p {
+		font-size: 15px;
+		line-height: 1.4;
+		margin-bottom: 15px;
+	}
+
+	.notice .yes, .notice .no {
+		float: right;
+	}
+
+	.notice .no {
+		margin-right: 10px;
+	}
+
+}

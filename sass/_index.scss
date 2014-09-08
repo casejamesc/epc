@@ -1,0 +1,234 @@
+.index-pg {
+	/* =============== BY ELEMENT ============== */
+	.sticky-wrapper {
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(213, 28%, 30%, .4)), to(hsla(213, 28%, 30%, .4))), url(../images/bg-car-min.png) 200px 40px no-repeat, url(../images/bg-tweed.png) repeat;
+		background: -webkit-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-car-min.png) 200px 40px no-repeat, url(../images/bg-tweed.png) repeat;
+		background: -moz-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-car-min.png) 200px 40px no-repeat, url(../images/bg-tweed.png) repeat;
+		background: -o-linear-gradient(90deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-car-min.png) 200px 40px no-repeat, url(../images/bg-tweed.png) repeat;
+		background: linear-gradient(0deg, hsla(213, 28%, 30%, .4) 0%, hsla(213, 28%, 30%, .4) 100%), url(../images/bg-car-min.png) 200px 40px no-repeat, url(../images/bg-tweed.png) repeat;
+		background-size: auto auto, 1400px auto, auto auto;
+	}
+
+	/* ================ HEADER ============== */
+	.header-logo {
+		position: absolute;
+		float: left;
+		height: 114px;
+	}
+
+	.header-promo {
+		float: right;	
+		width: 430px;
+		height: auto;
+		padding: 15px 10px 0 0;
+	}
+
+	/* ================================ MAIN ================================= */
+	/* ================ LEFT-PANEL ============== */
+	.left-panel {	
+		float: left;
+		width: 360px;
+		margin: 0 0 15px 5px;
+	}
+
+	/* ======== LOGIN ======= */
+	.login-box {
+		width: 85%;
+		margin-top: 20px;
+		margin-bottom: 20px;	
+		padding: 5%;
+		border: 3px solid white;
+		border-radius: 4px;
+		box-shadow: 0 0 20px 2px hsla(0,0%,0%,.5);
+		background-color: hsla(0, 0%, 100%, .4);
+
+		box-sizing: border-box;  /*includes dims, padding, border for sizing*/
+		-moz-box-sizing: border-box;
+	}
+
+	.name, .pw {
+		width: calc(100% - 12px);
+		width: -webkit-calc(100% - 12px);
+		height: 26px;
+		line-height: 26px;	
+		margin-bottom: 7px;
+	}
+
+	.remember-a-forgot-wrapper {
+		height: 22px;
+		line-height: 22px;
+		margin: 10px 0;
+	}
+
+	.login-box label {
+		float: left;
+		margin-right: 5px;
+		vertical-align: middle;
+		font-style: italic;
+		font-size: 14px;
+		color: hsl(0, 0%, 20% );
+	}
+
+	.login-box input[type="checkbox"] {
+		vertical-align: text-top;
+		position: relative;
+		top: 3px;
+	}
+
+	.forgot {
+		float: right;
+		vertical-align: middle;
+		font-style: italic;
+		font-size: 13px;
+		color: hsl(0, 0%, 20%);
+	}
+
+	.login {
+		float: right;
+	}
+
+	.create {	
+		float: right;
+		margin-right: 8px;
+	}
+
+	/* ======== CTA ======= */
+	.cta-box {
+		width: 85%;
+		margin-bottom: 10px;	
+		border: 3px solid white;
+		border-radius: 4px;
+		box-shadow: 0 0 20px 2px hsla(0,0%,0%,.5);
+		background-color: hsla(0, 0%, 100%, .4);
+
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.cta-box p {
+		line-height: 1.5;
+		padding: 15px;
+		color: hsl(0, 0%, 20%);
+	}
+
+	.cta-box a {
+		float: right;
+		margin: 0 15px 10px 0;
+	}
+
+	/* ================ CONTENT ============== */
+	.main-columns {
+		float: left;	
+		width: 575px;
+		width: calc(100% - 385px);	
+		width: -webkit-calc(100% - 385px);	
+		padding-top: 70px;
+	}
+
+	.col {
+		float: left;
+		width: 33%;	
+	}
+
+	.col .wrapper {
+		width: 190px;
+	}
+
+	.col h2 {
+		margin-bottom: 25px;
+		padding: 5px;
+		padding-left: 0;
+		border-bottom: 1px solid hsl(205, 34%, 50%);
+		font-size: 25px;
+		color: hsl(205, 38.6243%, 62.9412%);
+		text-shadow: 0 -1px hsla(0,0%,0%,.2);
+		font-weight: normal;
+	}
+
+	.col p {
+		padding-bottom: 5px;
+		font-size: 15px;
+		line-height: 1.3;
+		color: hsl(0, 0%, 90%);
+	}
+
+	.col a {
+		float: right;
+		height: 30px;
+		line-height: 30px;
+		width: 70px;
+		font-size: 14px;
+		text-decoration: underline;
+		color: hsl(0, 0%, 90%);
+	}
+
+	.streak {
+		float: left;
+		width: 1px;
+		height: 350px;
+		margin-top: 23px;
+		background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(0,0%,80%,.2)), color-stop(0.2, hsla(0,0%,80%,.8)), color-stop(0.8, hsla(0,0%,80%,.8)), to(hsla(0,0%,80%,.2)));
+		background-image: -webkit-linear-gradient(90deg, hsla(0,0%,80%,.2) 0%, hsla(0,0%,80%,.8) 20%, hsla(0,0%,80%,.8) 80%, hsla(0,0%,80%,.2) 100%);
+		background-image: -moz-linear-gradient(90deg, hsla(0,0%,80%,.2) 0%, hsla(0,0%,80%,.8) 20%, hsla(0,0%,80%,.8) 80%, hsla(0,0%,80%,.2) 100%);
+		background-image: -o-linear-gradient(90deg, hsla(0,0%,80%,.2) 0%, hsla(0,0%,80%,.8) 20%, hsla(0,0%,80%,.8) 80%, hsla(0,0%,80%,.2) 100%);
+		background-image: linear-gradient(0deg, hsla(0,0%,80%,.2) 0%, hsla(0,0%,80%,.8) 20%, hsla(0,0%,80%,.8) 80%, hsla(0,0%,80%,.2) 100%);
+	}
+
+	/* ================ FOOTER ============== */ /*move to parts for all pages??*/
+	.main-footer .nav1 {
+		float: left;
+	}
+
+	@media all and (max-width: 1230px) {
+		.main-columns {	
+			margin: 20px 0 10px 0;
+			padding-top: 0;
+		}
+
+		.col, .streak {
+			float: none;
+			width: 99%;
+			margin: 0;
+			border: none;
+		}
+
+		.col .wrapper {
+			width: auto;
+			padding: 5px 15px;
+		}
+
+		.col h2 {
+			margin-bottom: 9px;
+			border: none;
+			text-indent: 0;
+			text-shadow: 0 -1px hsla(0,0%,0%,.4);
+
+			background-color: transparent;
+			box-shadow: none;
+		}
+
+		.col p {
+			padding-bottom: 0;
+		}
+
+		.streak {
+			height: 1px;
+			width: 90%;
+			margin: 8px auto;
+			background-image: -webkit-gradient(linear, 0 0, 100% 0, from(hsla(0,0%,100%,.2)), color-stop(0.2, hsla(0,0%,100%,.8)), color-stop(0.8, hsla(0,0%,100%,.8)), to(hsla(0,0%,100%,.2)));
+			background-image: -webkit-linear-gradient(hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,.8) 20%, hsla(0,0%,100%,.8) 80%, hsla(0,0%,100%,.2) 100%);
+			background-image: -moz-linear-gradient(hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,.8) 20%, hsla(0,0%,100%,.8) 80%, hsla(0,0%,100%,.2) 100%);
+			background-image: -o-linear-gradient(hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,.8) 20%, hsla(0,0%,100%,.8) 80%, hsla(0,0%,100%,.2) 100%);
+			background-image: linear-gradient(270deg, hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,.8) 20%, hsla(0,0%,100%,.8) 80%, hsla(0,0%,100%,.2) 100%);
+		}
+	}
+	@media all and (max-width: 1150px) {
+		.col p {
+			font-size: 13px;
+		}
+		li .streak {
+			margin: 4px auto;
+		}
+	}
+
+}

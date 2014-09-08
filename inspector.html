@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sidekick - Inspector</title>
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'> 
+</head>
+<body class="inspector-pg">
+
+	<div class="sticky-wrapper">
+		<header class="main-header">
+			<div class="center-semi-responsive clearfix">
+				<img class="vendor-logo" src="images/logo-federated.png" alt="company logo">	
+				<a href="index.html"><img class="sidekick-logo" src="images/logo-sk-flag.png" alt="sidekick logo"></a>	
+				<div class="wrapper">
+					<div class="connection-details">
+						<p>Full Line Test - Mitchell1</p>
+						<p>Connected to Willowcreeks Acct: b215</p>
+						<p>Baltimore, MD 21225 410.789.6571</p>
+					</div>	
+					<ul class="nav1 h-list">
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Preferences</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="index.html">Logout</a></li>
+					</ul>
+				</div>
+				<ul class="nav2 h-list">
+					<li><a class="cilb-btn fancybox" href="#cilb-content">Check In</a></li>
+					<li><a href="year.html">Parts</a></li>
+					<li><a href="manager.html">Manager</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="main center-semi-responsive clearfix">
+			<div class="toolbox expansion clearfix">	
+				<a class="exp-trigger" href="">
+					<img class="logo-sm" src="images/logo-white-sm.png" alt="">
+					Sidekick Toolbox
+					<img class="arrow" src="images/arrow-white-left.png" alt="">
+				</a>
+				<span class="pending-icon">2</span>
+				<nav class="exp-content">
+					<ul id="main-menu">
+						<li><a href="check-in.html">Check In</a></li>
+						<li class="manager">
+							<a href="manager.html">Manager</a>
+							<span class="pending-number">(2)</span>
+						</li>
+						<li><a href="year.html">Parts</a></li>
+						<li class="seperator sep1"></li>
+						<li><a href="check-in.html">Accessories</a></li>
+						<li><a href="accessories.html">Advisor</a></li>
+						<li><a href="education.html">Knowledge Center</a></li>
+						<li><a href="inspector.html">Inspector</a></li>
+						<li><a href="labor.html">Labor Guide</a></li>
+						<li class="seperator sep2"></li>
+						<li><a href="http://www.daveisleib.com/federated/index.html">My Showcase</a></li>
+						<li><a href="vendor-showcase.html">My Vendor Showcase</a></li>
+					</ul>
+				</nav>
+				<br class="clearfix"> 
+			</div>
+			<div class="main-content-w-topbar">				
+				<div class="topbar clearfix">
+					<a class="cart cartlb-btn topbar-btn fancybox" href="#cartlb-content"><img src="images/cart.png" alt="cart"></a>
+					<form action="#">						
+						<div class="vin topbar-btn">
+							<input class="vin-input default-text dark-input" type="text" value="VIN/ Name/ Phone">
+							<div class="vin-select">
+								<input class="vin-select" type="file" accept="image/*" capture="camera">
+							</div>
+						</div>
+						<div class="recent-vehicles dropdown expansion topbar-btn">
+							<input class="exp-trigger no-cursor dark-input" type="text" value="Recent Vehicles" autocomplete="off">
+							<ul class="exp-content">
+								<li><a href="">2011 VW Tiguan</a></li>
+								<li class="seperator"></li>
+								<li><a href="">2009 Acura TL</a></li>
+								<li class="seperator"></li>
+								<li><a href="">2004 Ford Explorer</a></li>
+								<li class="seperator"></li>
+								<li><a href="">2009 BMW X5</a></li>
+							</ul>
+						</div>
+						<div class="search expansion topbar-btn">
+							<a class="exp-trigger" href=""><img src="images/search.png" alt="search"></a>
+							<input class="exp-content" type="text">
+						</div>
+					</form>
+				</div>
+				<div class="main-content clearfix">
+				
+					<div class="main-table-wrapper">
+						<div class="table-header clearfix">
+							<h2>Vehicle Multi-Point Inspection</h2>
+						</div>
+						<div class="sub-header clearfix">
+							<ul class="h-list">
+								<li class="active">Exterior</li>
+								<li>Interior</li>
+								<li>Transmission</li>
+							</ul>
+						</div>
+						<div class="q-groups flexslider">
+							<ul class="slides">
+								<li>
+									<table class="table1">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Vibrations/Tire Balance</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Axle Noise</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Clutch/Trans Slips</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Brake Shimmy</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Engine Oil Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+
+									<table class="table2">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Clutch/Trans Slips</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Brake Shimmy</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Engine Oil Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+								</li>
+								<li>
+									<table class="table1">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Clutch/Trans Slips</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Brake Shimmy</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Engine Oil Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+
+									<table class="table2">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Vibrations/Tire Balance</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Axle Noise</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Clutch/Trans Slips</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Brake Shimmy</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Engine Oil Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+								</li>
+								<li>
+									<table class="table1">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Vibrations/Tire Balance</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Axle Noise</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+
+									<table class="table2">
+										<tr>
+											<th>Road Test</th>
+										</tr>
+										<tr>
+											<td>Vibrations/Tire Balance</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Brake Shimmy</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Poor Running/Loss Of Power</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+
+										<tr>
+											<th>Under Car</th>
+										</tr>
+										<tr>
+											<td>Transmission Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Engine Oil Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Coolant Leaks</td>
+											<td>
+												<div class="custom-radio-ns standard">
+													<input class="custom-radio-ns" type="radio" name="vib" value="standard">
+												</div>
+												<div class="custom-radio-ns cautionary">
+													<input class="custom-radio-ns" type="radio" name="vib" value="cautionary">
+												</div>
+												<div class="custom-radio-ns attention">
+													<input class="custom-radio-ns" type="radio" name="vib" value="attention">
+												</div>
+												<div class="custom-radio-ns none">
+													<input class="custom-radio-ns" type="radio" name="vib" value="none">
+												</div>
+											</td>
+										</tr>
+									</table>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="main-table-shadow concave-shadow"></div>
+					<ul class="key h-list clearfix">
+						<li class="key-item standard">Standard</li>
+						<li class="divider"></li>
+						<li class="key-item cautionary">Cautionary</li>
+						<li class="divider"></li>
+						<li class="key-item attention">Attention</li>
+					</ul>
+					<a class="recommend rwlb-btn fancybox below-table-btn button light-bg" href="#rwlb-content">Recommend</a>
+					<a class="back below-table-btn button light-bg" href="year.html">Back</a>
+				</div>
+			</div>
+		</div>
+		<div class="push"></div>
+	</div>
+	<footer class="main-footer">
+		<div class="center-semi-responsive">
+			<p class="sidekick-online">Sidekick Online - Parts Ordering Service</p>
+			<ul class="h-list-w-sep clearfix">
+				<li><p>Copyright MindQuest - 2013</li>
+				<li><a href="index.html">www.sidekickshowcase.com</a></li>
+			</ul>
+		</div>
+	</footer>	
+
+	<div id="cartlb-content" class="clearfix">
+		<section class="client-info">
+			<h2>
+				Customer Information
+				<div class="vin-wrapper">
+					<input class="default-text dark-input" type="text" value="VIN/ Name/ Phone">
+					<a href=""><img src="images/icon-vin-app-w.png" alt="vin"></a>
+				</div>
+				<div class="spacer"></div>
+				<div class="recent-history">Recent History</div>
+				<div class="spacer"></div>
+			</h2>
+			<div class="section-content">
+				<table>
+					<tr>
+						<td><input class="custom-form-element default-text" type="text" name="name"  value="Name"></td>
+						<td><input class="custom-form-element default-text" name="phone" type="text" value="Phone"></td>
+						<td><input class="custom-form-element default-text" name="email" type="text" value="Email"></td>
+					</tr>
+					<tr>
+						<td><input class="custom-form-element default-text" name="year" type="text" value="Year"></td>
+						<td><input class="custom-form-element default-text" name="make" type="text" value="Make"></td>
+						<td><input class="custom-form-element default-text" name="model" type="text" value="Model"></td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<section class="parts">
+			<h2>Parts</h2>
+			<div class="section-content">
+				<table>
+					<thead>
+						<tr>
+							<th class="photo"></th>
+							<th class="part">Part</th>
+							<th class="part-n">Part No</th>
+							<th class="qty">Qty</th>
+							<th class="price">Price</th>
+							<th class="total">Total</th>
+							<th class="delete"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="photo">
+								<div class="photo-select-sm">
+									<input class="photo-select-sm" type="file" accept="image/*" capture="camera">
+								</div>
+							</td>
+							<td class="part">Disc Brake Pad</td>
+							<td class="part-n"><a class="ihlb-btn fancybox" href="#ihlb-content">ASP1611</a></td>
+							<td class="qty"><input class="custom-form-element" name="qty" type="text" value="4"></td>
+							<td class="price"><span>$</span><span class="price-value">189.99</span></td>
+							<td class="total"><span>$</span><span class="total-value">759.96</span></td>
+							<td class="delete"><a href=""><img src="images/trash.png" alt="trash" width="22" height="22"></a></td>
+						</tr>
+						<tr>
+							<td class="photo">
+								<div class="photo-select-sm">
+									<input class="photo-select-sm" type="file" accept="image/*" capture="camera">
+								</div>
+							</td>
+							<td class="part">ABS Cable</td>
+							<td class="part-n"><a class="ihlb-btn fancybox" href="#ihlb-content">BEN3231</a></td>
+							<td class="qty"><input class="custom-form-element" name="qty" type="text" value="1"></td>					
+							<td class="price"><span>$</span><span class="price-value">49.99</span></td>
+							<td class="total"><span>$</span><span class="total-value">49.99</span></td>
+							<td class="delete"><a href=""><img src="images/trash.png" alt="trash" width="22" height="22"></a></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="subtotal-label"><span>SUB-TOTAL</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="subtotal"><span class="subtotal-value">$809.95</span></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="labor">
+			<h2>
+				Labor
+				<div class="labor-link-wrapper">
+					<a class="labor-link" href="">Labor Guide</a>
+				</div>
+				<div class="spacer"></div>
+			</h2>
+			<div class="section-content">
+				<table>
+					<thead>
+						<tr>
+							<th class="blank"></th>
+							<th class="procedure">Procedure</th>
+							<th class="description">Description</th>
+							<th class="qty">Hours</th>
+							<th class="price">Rate</th>
+							<th class="total">Total</th>
+							<th class="blank"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="blank"></td>
+							<td class="procedure">Brake Calipers</td>
+							<td class="description">Setup, Removal, Alignment</td>
+							<td class="qty"><input class="custom-form-element" name="qty" type="text" value="2.5"></td>
+							<td class="price"><span>$</span><span class="price-value">79.99</span></td>
+							<td class="total"><span>$</span><span class="total-value">159.98</span></td>  
+							<td class="blank"></td>              
+						</tr>
+						<tr>
+							<td class="blank"></td>
+							<td class="procedure">Oil Change</td>
+							<td class="description">Cleaning and Replacement</td>
+							<td class="qty"><input class="custom-form-element" name="qty" type="text" value="1"></td>
+							<td class="price"><span>$</span><span class="price-value">79.99</span></td>
+							<td class="total"><span>$</span><span class="total-value">79.99</span></td>
+							<td class="blank"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="subtotal-label"><span>SUB-TOTAL</span></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="subtotal"><span class="subtotal-value">$237.00</span></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section class="recs">
+			<h2>Recommendations</h2>
+			<div class="section-content">
+				<ul class="rec-body">
+					<li class="rec">
+						<ul class="h-list clearfix">
+							<li class="col col1">
+								<h3>Tires Worn</h3>
+								<img src="images/tire1.png" alt="">
+								<img src="images/tire2.png" alt="">
+							</li>
+							<li class="col col2">
+								<h3>Recommendation</h3>
+								<div>
+									<ul class="rec-summary h-list-w-sep clearfix">
+										<li>Matt J.</li>
+										<li>12/12/13</li>
+									</ul>
+									<p class="rec-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</li>
+							<li class="col col3">
+								<h3>Status</h3>
+								<img src="images/circle-yellow.png" alt="">
+								<p>3 months</p>
+							</li>
+						</ul>
+					</li>
+					<li class="rec">
+						<ul class="h-list clearfix">
+							<li class="col col1">
+								<h3>Filter Replacement</h3>
+								<img src="images/filter.png" alt="">
+							</li>
+							<li class="col col2">
+								<h3>Recommendation</h3>
+								<div>
+									<ul class="rec-summary h-list-w-sep clearfix">
+										<li>Matt J.</li>
+										<li>12/12/13</li>
+									</ul>
+									<p class="rec-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+								</div>
+							</li>
+							<li class="col col3">
+								<h3>Status</h3>
+								<img src="images/circle-red.png" alt="">
+								<p>Urgent</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section>
+			<h2>Order Details</h2>
+			<div class="section-content">
+				<div class="order-details">
+					<input class="po custom-form-element default-text" type="text" value="PO #"/>
+					<textarea class="comment custom-form-element default-text">Comment</textarea>
+				</div>
+			</div>
+		</section>
+
+		<a class="order-btn button light-bg" href="">Order</a>
+		<a class="save-btn button light-bg" href="">Save</a>
+		<a class="preview-btn button light-bg" href="advisor-report2.html">Preview</a>	
+		<a class="send-btn button light-bg" href="">Email</a>	
+	</div>
+	
+	<div id="ihlb-content" class="clearfix">
+		<div class="col1 col">
+			<div class="flexslider">
+				<ul class="slides">
+					<li data-thumb="images/brake-pads-thumb.png">
+						<img class="item-img" src="images/brake-pads.jpg" alt="">
+					</li>
+					<li data-thumb="images/brake-pads2.jpg">
+						<img class="item-img" src="images/brake-pads2.jpg" alt="">
+					</li>
+					<li data-thumb="images/brake-pads3.jpg">
+						<img class="item-img" src="images/brake-pads3.jpg" alt="">
+					</li>
+					<li data-thumb="images/brake-pads4.jpg">
+						<img class="item-img" src="images/brake-pads4.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			<div class="reviews-social clearfix">
+				<ul class="reviews">
+					<li><img src="images/gold-star.png" alt="star"></li>
+					<li><img src="images/gold-star.png" alt="star"></li>
+					<li><img src="images/gold-star.png" alt="star"></li>
+					<li><img src="images/grey-star.png" alt="star"></li>
+					<li><img src="images/grey-star.png" alt="star"></li>
+					<li><span>[6 reviews]</span></li>
+				</ul>
+				<ul class="social">
+					<li><img src="images/facebook.png" alt="facebook"></li>
+					<li><img src="images/google.png" alt="google"></li>
+					<li><img src="images/twitter.png" alt="twitter"></li>
+				</ul>
+			</div>
+
+			<a class="add button red-bg" href="">Add To Cart</a>
+		</div>
+		<div class="col2 col">
+			<h2>Disc Brake Pads</h2>
+			<p class="price">$169.00</p>
+			<p class="specs">Specs</p>
+			<p class="description">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae suscipit elit. Nam sit amet dolor ligula. Suspendisse scelerisque porta dolor quis dapibus. In varius, leo venenatis ultrices viverra, elit nisl viverra nunc, non sodales sem nisi vel ipsum. Curabitur id nunc nec enim blandit sollicitudin eget at dui. Sed at ante et purus laoreet convallis. Sed dui purus, ultrices quis purus vel, convallis commodo nisi.
+			</p>
+
+			<p class="description">
+				Phasellus consequat lacus sed nunc elementum, tincidunt gravida leo ultricies. Phasellus nisl nisl, elementum sed dui in, convallis dictum risus. Aliquam erat volutpat. Nunc id justo lectus. Sed non erat purus. Curabitur quis ante ac dui tristique interdum. In elementum lectus ut libero lacinia sollicitudin in a dui. Sed mi massa, malesuada non dolor ac, venenatis blandit libero. Sed vehicula congue sagittis. Aliquam lacus lectus, viverra ut rhoncus et, ullamcorper sodales neque. 
+			</p>
+		</div>
+	</div>
+	
+	<div id="rwlb-content">
+		<section class="rec rec1">
+			<h2>Front Brakes</h2>
+			<ul class="clearfix">
+				<li class="col photo">
+					<label for="photo1">Component Photograph</label>
+					<div class="photo-select center">
+						<input id="photo1" class="photo-select" type="file" accept="image/*" capture="camera">
+					</div>
+				</li>
+				<li class="col">
+					<label for="condition1">Current Item Condition</label>
+					<div class="select">
+						<select id="condition1" class="select" title="Select one">
+							<option>Broken</option>
+							<option>Leaking</option>
+							<option>Rattling</option>
+							<option>Worn Out</option>
+						</select>
+					</div>
+					<label for="action1">Recommended Action</label>
+					<div class="select">
+						<select id="action1" class="select" title="Select one">
+							<option>Replace</option>
+							<option>Service</option>
+							<option>Rebuild</option>
+							<option>Observe</option>
+						</select>
+					</div>
+				</li>
+				<li class="col">
+					<label for="comments">Technician Comments</label>
+					<textarea class="custom-form-element textarea" name="" id="comments" cols="30" rows="10"></textarea>
+				</li>
+			</ul>
+		</section>
+		<section class="rec rec2">
+			<h2>Serpentine Belt</h2>
+			<ul class="clearfix">
+				<li class="col photo">
+					<label for="photo1">Component Photograph</label>
+					<div class="photo-select center">
+						<input id="photo1" class="photo-select" type="file" accept="image/*" capture="camera">
+					</div>
+				</li>
+				<li class="col">
+					<label for="condition1">Current Item Condition</label>
+					<div class="select">
+						<select id="condition1" class="select" title="Select one">
+							<option>Broken</option>
+							<option>Leaking</option>
+							<option>Rattling</option>
+							<option>Worn Out</option>
+						</select>
+					</div>
+					<label for="action1">Recommended Action</label>
+					<div class="select">
+						<select id="action1" class="select" title="Select one">
+							<option>Replace</option>
+							<option>Service</option>
+							<option>Rebuild</option>
+							<option>Observe</option>
+						</select>
+					</div>
+				</li>
+				<li class="col">
+					<label for="comments">Technician Comments</label>
+					<textarea class="custom-form-element textarea" name="" id="comments" cols="30" rows="10"></textarea>
+				</li>
+			</ul>
+		</section>
+		<div class="bottom-buttons">
+			<a class="continue button light-bg white-border" href="">Create</a>
+			<a class="cancel button light-bg white-border" href="">Cancel</a>
+		</div>
+	</div>
+
+	<div id="cilb-content">
+		<section class="rec rec1">
+			<h2>Vehicle Check In</h2>
+			<div class="check-in-content clearfix">
+				<div class="create-wrapper clearfix">
+					<input id="create-new" type="checkbox">
+					<label for="create-new">Create&nbsp;New</label>
+				</div>
+				<div class="vin-wrapper row clearfix">
+					<label>VIN:</label>
+					<a href=""><img src="images/camera.png" alt=""></a>
+					<input class="vin-input custom-form-element" type="text">
+				</div>
+				<div class="name-wrapper row clearfix">
+					<label>Name:</label>
+					<input class="first-name name-input custom-form-element" type="text">
+					<input class="last-name name-input custom-form-element" type="text">
+				</div>
+				<div class="phone-wrapper row clearfix">
+					<label>Phone:</label>
+					<input class="phone-input custom-form-element" type="text">
+				</div>
+
+				<div class="bottom-buttons">
+					<a class="lookup button light-bg white-border" href="">Part Lookup</a>
+					<a class="check-in button light-bg white-border" href="">Check In</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/application-ck.js"></script>  
+</body>
+</html>

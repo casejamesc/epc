@@ -1,0 +1,11 @@
+.collapse-summary {
+	display: none;
+}
+
+.collapse-arrow {
+	position: absolute; 
+	left: 30px;
+	top: 17px;
+	height: 11px;
+	transition: all .3s ease-out 0s;
+}

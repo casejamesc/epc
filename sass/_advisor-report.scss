@@ -1,0 +1,434 @@
+/*====== GENERAL ======*/
+.ar-pg {
+	font-size: 18px; 
+	
+	.button {
+		width: 100px;
+		height: 32px;
+		line-height: 32px;
+		border-radius: 4px;
+		border-color: hsl(60, 3%, 86%); /*reset app.css*/
+		border-top: 1px solid hsl(0, 0%, 100%);
+		border-bottom: 1px solid hsl(60, 3%, 74%);
+		font-size: 15px;
+		font-style: italic;
+		font-weight: bold;
+		text-shadow: 0 -1px hsla(0,0%,100%,.8);
+		color: hsl(0,0%,37%);
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(60, 3%, 89%)), to(hsl(0, 0%, 92%)));
+		background: -webkit-linear-gradient(90deg, hsl(60, 3%, 89%) 0%, hsl(0, 0%, 92%) 100%);
+		background: -moz-linear-gradient(90deg, hsl(60, 3%, 89%) 0%, hsl(0, 0%, 92%) 100%);
+		background: -o-linear-gradient(90deg, hsl(60, 3%, 89%) 0%, hsl(0, 0%, 92%) 100%);
+		background: linear-gradient(0deg, hsl(60, 3%, 89%) 0%, hsl(0, 0%, 92%) 100%);
+	}
+
+	.recs .button {
+		border-top: 1px solid hsl(0, 0%, 92%);
+		border-bottom: 1px solid hsl(60, 3%, 75%);
+	}
+
+	.shadow {
+		position: relative;
+		opacity: .6;
+	}
+
+	/*====== HEADER ======*/
+	.main-header {
+		height: 100px;
+		background: url(../images/bg-ar-header.png) top; /* overrides app.css */
+		box-shadow: none;
+	}
+
+	.quote h2, .recs h2 {
+		font-size: 36px;
+		font-family: 'Architects Daughter';
+	}
+
+	.vendor-logo {
+		float: left;
+		height: 90px;
+	}
+
+	.header-title {
+		float: right;
+		margin: 35px 10px 0 0;
+		font-size: 34px;
+		color: hsla(0,0%,95%,.9);
+		font-family: 'Architects Daughter';
+	}
+
+	/*============ MAIN-CONTENT ============*/
+	/*=== INTRO-HEADER ===*/
+	.row1 {
+		height: 70px;
+		background: hsl(0,0%,96.5%);
+	}
+
+	.secondary-header {
+		position: relative; /*to appear on top of elements below it*/
+		padding: 25px;
+		border-radius: 0 0 6px 6px;
+		border: 2px solid hsl(0,0%,90%);
+		border-top: none;
+		color: hsl(0,0%,50%);
+		background: hsl(0, 0%, 100%);
+	}
+
+	.row1 .concave-shadow {
+		position: relative; /*to appear on top of elements below it*/
+		opacity: .5;
+	}
+
+	.details-summary {
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+
+	.details-summary li {
+		padding: 0 15px;
+	}
+
+	.details-summary li:first-of-type {
+		padding-left: 0;
+	}
+
+	.details-summary .name {
+		font-weight: bold;
+		color: hsl(357, 93%, 38%);
+	}
+
+	.details-summary .title {
+		font-weight: bold;
+	}
+
+	.greeting {
+		font-size: 15px;
+		letter-spacing: 1px;	
+	}
+
+	/*=== SECTION (COMMON) ===*/
+	section h2 {
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	/* ====== QUOTE ====== */
+	.quote {
+		padding: 80px 0 50px;
+		color: hsla(0,0%,100%,.8);
+		background: url(../images/bg-car-light-min.png) no-repeat top, hsl(220, 23.5%, 47%);
+		background-size: 1200px auto;
+	}
+
+	.quote .shadow {
+		clear: both;
+		display: none;
+	}
+
+	.quote table {
+		float: right;
+		border-collapse: collapse;
+		border: none;
+	}
+
+	.quote th {
+		height: 40px;
+		font-weight: normal;
+		font-style: italic;
+	}
+
+	.quote th, .quote td {
+		padding: 0 10px;
+		border: none;
+	}
+
+	.quote td {
+		height: 43px;
+	}
+
+	.quote .part {
+		width: 175px;
+		text-align: left;
+	}
+
+	.quote .price {
+		width: 110px;
+		padding: 0 75px 0 60px;
+		text-align: right;
+	}
+
+	.quote .total {
+		width: 60px;
+		padding: 0 75px 0 60px;
+		text-align: right;
+	}
+
+	.quote .final-total {
+		float: right;
+		clear: both;
+		margin-top: 20px;
+		margin-right: 75px;
+	}
+
+	.quote .final-total .number {
+		font-weight: bold;
+	}
+
+	.quote .btn-wrapper {
+		float: left;
+		margin-top: 40px;
+		clear: both;
+	}
+
+	.quote .btn-wrapper .button {
+		margin-right: 10px;
+	}
+
+	/* === PARTS === */
+	.parts {
+		margin: 20px 0;
+	}
+
+	.parts h2 {
+		float: left;
+		width: 151px;
+		margin-top: -9px;
+		padding-bottom: 6px;
+		border-bottom: 2px solid hsla(0,0%,90%,.5);
+		color: white;
+	}
+
+	.parts thead {
+		border-bottom: 2px solid hsla(0,0%,90%, .5);
+	}
+
+	.parts th.price {
+		border-left: 2px solid hsla(0,0%,90%, .5);
+	}
+
+	.parts th.total {
+		border-left: 2px solid hsla(0,0%,90%, .5);
+	}
+
+	.parts tbody tr:first-of-type td {
+		padding-top: 10px;
+	}
+
+	.parts .part a {
+		float: right;
+	}
+
+	.parts .photo {
+		width: 50px;
+		text-align: center;
+	}
+
+	.parts .photo img {
+		width: 30px;
+		margin-top: 4px;
+	}
+
+	/* === LABOR === */
+	.labor {
+		padding: 3px 0;
+		margin-left: 220px;
+		border-top: 2px dashed hsla(0,0%,90%,.5);
+		border-bottom: 2px dashed hsla(0,0%,90%,.5);
+		cursor: pointer;
+	}
+
+	.labor header {
+		float: right;
+		width: 403px;
+		padding: 10px 15px;
+		margin-right: 60px;
+		font-style: italic;
+		background: url(../images/arrow-white-down.png) 19px center no-repeat;
+	}
+
+	.labor h3 {
+		float: left;
+		padding-left: 160px;
+		font-weight: normal;
+		font-size: 18px;
+	}
+
+	.labor .subtotal {
+		float: right;
+	}
+
+	.labor table {
+		display: none;
+		margin-top: 10px;
+		margin-bottom: -13px;
+	}
+
+	/* ====== RECOMENDATIONS ====== */
+	.recs {
+		padding: 30px 0;
+		color: hsl(0,0%,40%);
+		background: hsl(0,0%,95%);
+	}
+
+	.recs header {
+		margin-bottom: 15px;
+	}
+
+	.recs h2 {
+		float: left;
+		color: hsl(220, 23.5%, 47%);
+	}
+
+	.recs .btn-wrapper {
+		float: right;
+		display: none;
+	}
+
+	.recs .btn-wrapper .button {
+		margin-left: 10px;
+	}
+
+	.rec {
+		margin-left: 30px;
+		padding: 30px 10px;
+		border-top: 1px solid hsl(0,0%,80%);
+		cursor: pointer;
+	}
+
+	.rec:hover {
+		background-color: hsl(0,0%,91%);
+	}
+
+	.rec:first-of-type {
+		border-top: none;
+	}
+
+	.recs .col {
+		float: left;
+	}
+
+	.recs .col1 {
+		width: 160px;
+		height: 74px;
+		line-height: 74px;
+	}
+
+	.recs h4 {
+		font-weight: normal;
+		color: hsl(0,0%,45%);
+	}
+
+	.recs .col2 {
+		width: 260px;
+	}
+
+	.recs .col2 img {
+		height: 74px;
+		border: 1px solid hsl(0,0%,65%);
+		margin-left: 5px;
+	}
+
+	.recs .col3 {
+		float: right;
+		width: 350px;
+	}
+
+	.recs .name-date {
+		display: none;
+		padding-bottom: 4px;
+		font-size: 17px;
+		font-weight: bold;
+	}
+
+	.recs .description {
+		margin-top: 15px;
+	}
+
+	.recs .description-wrapper {
+		float: left;
+		width: 240px;
+		height: 72px;
+		padding: 0 15px;
+		border-bottom: 2px solid hsl(0,0%,80%);
+		border-right: none;
+		line-height: 1.4;
+		font-size: 15px;
+	}
+
+	.recs .status {
+		float: right;
+		width: 74px;
+		height: 74px;
+		border-radius: 40px;
+		box-shadow: inset 0 0 4px hsla(0,0%,0%,.6);
+		text-align: center;
+	}
+
+	.recs .status span {
+		display: inline-block;
+		margin: 0 5px;
+		line-height: 1.4;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.urgent {
+		color: white;
+		background: url(../images/bg-diag2.png), hsl(357, 69%, 55%);
+	}
+
+	.urgent span {
+		padding-top: 25px;
+	}
+
+	.warning {
+		color: hsl(0,0%,30%);
+		background: url(../images/bg-diag2.png), hsl(35, 72%, 75%);
+	}
+
+	.warning span {
+		padding-top: 25px;
+	}
+
+	/*====== LINKS-SECTION ======*/
+	.links {
+		padding-top: 50px;
+		background-color: hsl(0, 0%, 80%);
+	}
+
+	.links ul {
+		width: 880px;
+		height: 230px;
+	}
+
+	.report-link {
+		float: left;
+		width: 280px;
+		text-align: center;
+	}
+
+	.report-link a {
+		display: inline-block;
+		width: 204px;
+		padding-top: 20px;
+	}
+
+	.report-link:hover a {
+		background: url(../images/arch.png) no-repeat 18px 0;
+	}
+
+	.report-link img {
+		height: 129px;
+		margin-bottom: 10px;
+		opacity: .9;
+	}
+
+	.report-link span {
+		font-size: 19px;
+		font-style: italic;
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: hsl(0,0%,100%);
+	}
+
+}

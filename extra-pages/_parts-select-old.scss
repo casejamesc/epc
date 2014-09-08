@@ -1,0 +1,97 @@
+/* ================ TABLE ============== */
+/*======== GENERAL TD/TR ========*/
+.parts-select-pg {
+
+	.main-table td {
+		padding: 14px 8px;
+		text-align: left;
+		border: none;
+	}
+
+	/*this kind of fix's bottom left corner in Safari*/
+	.main-table-wrapper {
+		overflow: hidden;	
+	}
+
+	.main-table tr:hover:not(.mfr):not(.header-row) {
+		background-color: hsla(213, 97%, 85%, .3);
+	}
+
+	.main-table tr:active:not(.mfr):not(.header-row) {
+		background-color: hsl(213, 97%, 85%);
+	}
+
+	/*======== HEADER-ROW ========*/
+	.main-table thead tr {
+		height: 44px;
+		text-transform: uppercase;
+		color: hsl(0, 0%, 76%);
+		background-image: url(../images/bg-table-header.png);
+		overflow: hidden;	
+	}
+
+	.main-table th {
+		padding: 8px 8px;
+		border: none; /*this isnt doing anything. Why aren't there borders in the header area? lines show at different zooms*/
+		text-align: left;
+	}
+
+	.main-table th:first-of-type, .main-table td:first-of-type {
+		padding: 0 8px 0 15px;
+	}
+
+	/*======== MFR-ROWS ========*/
+	.main-table tr.mfr td {
+		/*moved below to try and fix Safari*/
+		border: none;
+		box-shadow: inset 0 0 0 1px hsl(206, 36%, 4%), inset 0 0 0 2px hsl(208, 11%, 36%);
+		color: white;
+		background: -webkit-gradient(linear, 0 100%, 0 0, from(hsla(0, 0%, 75%, .1)), to(hsla(0, 0%, 75%, .1))), url(../images/bg-table-header.png);
+		background: -webkit-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: -moz-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: -o-linear-gradient(90deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+		background: linear-gradient(0deg, hsla(0, 0%, 75%, .1) 0%, hsla(0, 0%, 75%, .1) 100%), url(../images/bg-table-header.png);
+	}
+
+	.main-table tr.mfr td {
+		height: 24px;
+		padding-left: 8px;
+	}
+
+	/*======== COLUMN-STYLES ========*/
+	.part-description {
+		padding-top: 5px;
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	.main-table a.ihlb-btn {
+		width: auto;
+		height: 23px;
+		line-height: 23px;
+		color: hsl(218, 65%, 36%);
+	}
+
+	.main-table a.ihlb-btn:hover {
+		background: none;
+		box-shadow: none;
+		color: hsl(218, 65%, 36%);
+	}
+
+	.qty {
+		width: 40px;
+		background: transparent;
+	}
+
+	/*======== B0TTOM BUTTON ========*/
+	.view-cart {		
+		float: right;
+		margin: 0 3% 15px 0;
+	}
+
+}
+
+
+
+
+

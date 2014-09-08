@@ -1,0 +1,468 @@
+/* ====== FONT ====== */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600,700);
+
+/*============= STICKY-FOOTER ============*/ 
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+
+.sticky-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+}
+
+.main-footer, .push {
+	height: 40px; /* .push must be the same height as .footer */
+}
+
+/* =============== BY ELEMENT ============== */
+* {
+	margin: 0px;
+	border: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+
+html, body, .sticky-wrapper, .main-header, .main-footer {
+	min-width: 980px;
+}
+
+body {
+	// font: 14px/1.2 'Afta-Sans', Arial, Helvetica, sans-serif;
+	font: 16px/1.2 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	/*text-decoration: underline;*/
+}
+
+input, textarea {
+	// font: 14px/1.3 'Afta-Sans', Arial, Helvetica, sans-serif;
+	font: 16px/1.3 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+button, input[type="submit"] {
+	cursor: pointer;
+	// font-family: 'Afta-Sans';
+	font-family: 'Source Sans Pro';
+	font-weight: 300;
+}
+
+/*fix default box-sizing for submit elements*/
+button, input[type="submit"] {
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+/*HORIZONTAL LISTS*/
+.h-list li {
+	float: left;
+	padding: 0 8px;
+}
+
+.h-list li:first-of-type {
+	padding-left: 0;
+}
+
+.h-list li:last-of-type {
+	padding-right: 0;
+}
+
+.h-list-w-sep li {
+	float: left;
+	padding: 0 8px;
+	border-right: 1px solid;
+}
+
+.h-list-w-sep li:first-of-type {
+	padding-left: 0;
+}
+
+.h-list-w-sep li:last-of-type {
+	padding-right: 0;
+	border-right: none;
+}
+/* =============== BY CLASS ============== */
+
+/* ======= POSITIONING/SIZING ======= */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: ".";
+	clear: both;	
+	line-height: 0;
+	height: 0;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+.center860 {
+	width: 860px;
+	margin: 0 auto;
+}
+
+.center960 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.center-semi-responsive {
+	width: 95%;
+	min-width: 960px;
+	margin: 0 auto;
+}
+
+/* ======= LINKS ======= */
+a.non-link, input.non-link {
+	pointer-events: none;
+	cursor: default;
+	color: hsl(0, 0%, 60%);
+}
+
+a.disabled, input.disabled {
+	pointer-events: none;
+	cursor: default;
+	color: hsl(0, 0%, 60%);
+}
+
+/* ======= FORMS ======= */
+.custom-form-element {
+	width: 185px;
+	padding: 4px 4px 4px 8px;
+	border-top: 1px solid hsl(0,0%,80%);
+	border-left: 1px solid hsl(0,0%,80%);
+	// font-size: 15px;
+	/*box-shadow: inset 3px 3px 7px hsla(0,0%,0%,.2);*/
+	box-shadow: inset 3px 3px 7px hsla(0,0%,0%,.18);
+	color: hsl(0,0%,30%);
+}
+
+.input {
+	height: 30px;
+	line-height: 30px;
+}
+
+.textarea {
+	height: 100px;
+	line-height: 30px;
+}
+
+/*LARGE DROPDOWN*/
+div.select {
+	position: relative;
+	width: 252px;
+	border-radius: 4px;
+	font-size: 15px; /*this affects div's height!*/
+	background: url(../images/custom-select.png) no-repeat;
+}
+
+select.select {
+	position: relative;
+	top: -2px;
+	opacity: 0;
+	width: 250px;
+	height: 26px;
+}
+
+span.select {
+    position: absolute;
+    z-index: 1;
+    float: left;
+    bottom: 0;
+    left: 0;
+    width: 166px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 8px;
+    color: hsl(0, 0%, 35%);
+    cursor: default;
+}
+
+/*EXPANSIONS*/
+.expansion {
+	position: relative;
+}
+
+.expansion .exp-content {
+	position: absolute;
+	left: 0;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown ul {
+	position: absolute;
+	z-index: 100;
+	left: -1px;
+}
+
+/*PHOTO SELECT*/
+div.photo-select {
+	position: relative;
+	width: 90px;
+	border-radius: 4px;
+	background: url(../images/camera.png) no-repeat 5px 9px;
+	background-size: 90% auto;
+}
+
+input.photo-select {
+	position: relative;
+	top: 2px;
+	opacity: 0;
+	width: 90px;
+	height: 90px;
+	cursor: pointer;
+}
+
+/*SMALL*/
+div.photo-select-sm {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	background: url(../images/camera.png) no-repeat 1px 3px;
+	background-size: 90% auto;
+}
+
+input.photo-select-sm {
+	position: relative;
+	top: 0;
+	opacity: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+/*SMALL*/
+div.vin-select {
+	position: relative;
+	display: inline-block;
+	width: 27px;
+	background: url(../images/icon-vin-app-w.png) no-repeat 0 0;
+	background-size: 100% auto;
+}
+
+input.vin-select  {
+	position: relative;
+	top: 0;
+	opacity: 0;
+	width: 27px;
+	height: 27px;
+	overflow: hidden; /*without this: chrome makes default input area clickable, even though it isn't visible*/
+	cursor: pointer;
+}
+
+div.custom-checkbox {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+	border-top: 1px solid hsl(0,0%,80%);
+	border-left: 1px solid hsl(0,0%,80%);
+	box-shadow: inset 3px 3px 7px hsla(0,0%,0%,.18);
+	color: hsl(0,0%,30%);
+	background-color: hsl(0, 0%, 100%);
+}	
+
+div.custom-checkbox.checked {
+	background: url(../images/checkbox-check.png) no-repeat center center, hsl(0, 0%, 100%);
+	background-size: 70% auto;
+}
+
+input.custom-checkbox {
+	position: relative;
+	top: 0;
+	opacity: 0;
+	width: 20px;
+	height: 20px;
+}
+
+div.custom-radio {
+	position: relative;
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	background: url(../images/radio-unchecked.png) no-repeat;
+	background-size: 100% auto;
+}
+
+div.custom-radio.checked {
+	background: url(../images/radio-checked.png) no-repeat;
+	background-size: 100% auto;
+}
+
+input.custom-radio {
+	position: relative;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 23px;
+	height: 23px;
+}
+
+div.custom-radio + label {
+	vertical-align: top;
+}
+
+div.custom-radio-ns {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../images/radio-unchecked.png) no-repeat;
+	background-size: 100% auto;
+}
+
+input.custom-radio-ns {
+	position: relative;
+	top: 0;
+	opacity: 0;
+	width: 25px;
+	height: 25px;
+}
+
+/* ======= BUTTONS ======= */
+.button {
+	display: inline-block;
+	width: 100px;
+	height: 37px;
+	line-height: 37px;
+	border-radius: 5px;
+	text-align: center;		
+	text-decoration: none;
+}
+
+.light-bg {
+	border: 1px solid hsl(0, 0%, 73%);
+	color: hsl(0, 0%, 30%);	
+	background: hsl(0, 0%, 100%);
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(0, 0%, 93%)), color-stop(0.5, hsl(0, 0%, 99%)), to(hsl(0, 0%, 100%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(0, 0%, 93%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 100%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(0, 0%, 93%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 100%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(0, 0%, 93%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 100%) 100%);
+	background-image: linear-gradient(0deg, hsl(0, 0%, 93%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 100%) 100%);
+}
+
+.light-bg:hover {
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(0, 0%, 100%)), color-stop(0.5, hsl(0, 0%, 99%)), to(hsl(0, 0%, 93%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 93%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 93%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 93%) 100%);
+	background-image: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 99%) 50%, hsl(0, 0%, 93%) 100%);
+}
+
+.red-bg {
+	border: none;
+	color: white;
+	background: hsl(9, 66%, 45%);	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(359, 73%, 27%)), color-stop(0.5, hsl(9, 66%, 40%)), to(hsl(9, 66%, 45%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(359, 73%, 27%) 0%, hsl(9, 66%, 40%) 50%, hsl(9, 66%, 45%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(359, 73%, 27%) 0%, hsl(9, 66%, 40%) 50%, hsl(9, 66%, 45%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(359, 73%, 27%) 0%, hsl(9, 66%, 40%) 50%, hsl(9, 66%, 45%) 100%);
+	background-image: linear-gradient(0deg, hsl(359, 73%, 27%) 0%, hsl(9, 66%, 40%) 50%, hsl(9, 66%, 45%) 100%);
+}
+
+.red-bg:hover {	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(9, 66%, 45%)), color-stop(0.5, hsl(9, 66%, 40%)), to(hsl(359, 73%, 27%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(9, 66%, 45%) 0%, hsl(9, 66%, 40%) 50%, hsl(359, 73%, 27%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(9, 66%, 45%) 0%, hsl(9, 66%, 40%) 50%, hsl(359, 73%, 27%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(9, 66%, 45%) 0%, hsl(9, 66%, 40%) 50%, hsl(359, 73%, 27%) 100%);
+	background-image: linear-gradient(0deg, hsl(9, 66%, 45%) 0%, hsl(9, 66%, 40%) 50%, hsl(359, 73%, 27%) 100%);
+}
+
+.lightblue-bg {
+	border: none;
+	color: white;
+	background: hsl(205, 40.2439%, 67.8431%);	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 40%, 45%)), to(hsl(205, 40%, 65%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+	background-image: linear-gradient(0deg, hsl(205, 40%, 45%) 0%, hsl(205, 40%, 65%) 100%);
+}
+
+.lightblue-bg:hover {	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(205, 40%, 65%)), to(hsl(205, 40%, 45%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(205, 40%, 65%) 0%, hsl(205, 40%, 45%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(205, 40%, 65%) 0%, hsl(205, 40%, 45%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(205, 40%, 65%) 0%, hsl(205, 40%, 45%) 100%);
+	background-image: linear-gradient(0deg, hsl(205, 40%, 65%) 0%, hsl(205, 40%, 45%) 100%);
+}
+
+.blue-bg:hover {	
+  	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(204,65%,48%)), to(hsl(212,84%,32%)));
+  	background-image: -webkit-linear-gradient(90deg, hsl(204,65%,48%) 0%, hsl(212,84%,32%) 100%);
+  	background-image: -moz-linear-gradient(90deg, hsl(204,65%,48%) 0%, hsl(212,84%,32%) 100%);
+  	background-image: -o-linear-gradient(90deg, hsl(204,65%,48%) 0%, hsl(212,84%,32%) 100%);
+  	background-image: linear-gradient(0deg, hsl(204,65%,48%) 0%, hsl(212,84%,32%) 100%);
+}
+
+.blue-bg {
+	border: none;
+	color: white;
+	background: hsl(9, 66%, 45%);	
+	background-image: -webkit-gradient(linear, 0 100%, 0 0, from(hsl(212,84%,32%)), to(hsl(204,65%,48%)));
+	background-image: -webkit-linear-gradient(90deg, hsl(212,84%,32%) 0%, hsl(204,65%,48%) 100%);
+	background-image: -moz-linear-gradient(90deg, hsl(212,84%,32%) 0%, hsl(204,65%,48%) 100%);
+	background-image: -o-linear-gradient(90deg, hsl(212,84%,32%) 0%, hsl(204,65%,48%) 100%);
+	background-image: linear-gradient(0deg, hsl(212,84%,32%) 0%, hsl(204,65%,48%) 100%);
+}
+
+.white-border {
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid white;
+	box-shadow: 0 0 10px 0 hsla(0, 0%, 0%, .3);
+}
+
+/* ======= SHADOWS ======= */
+.convex-shadow {
+	height: 20px;
+	margin-bottom: -20px;
+	background: url(../images/convex-shadow-bottom.png);
+	background-size: 100% 100%;
+}
+
+.convex-shadow-top {
+	height: 20px;
+	margin-top: -20px;
+	background: url(../images/convex-shadow-top.png);
+	background-size: 100% 100%;
+}
+
+/* ======== SHADOW ======= */
+.concave-shadow {
+	height: 23px;	
+	background: url(../images/shadow-l.png) top left no-repeat, url(../images/shadow-r.png) top right no-repeat; 
+}
+
+
+
+
+
