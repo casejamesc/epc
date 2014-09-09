@@ -2,7 +2,7 @@ Front-end code was placed under ASP.NET backend
 
 Site layout:
   - index
-  - year.html
+  - year
     - check-in
       - select, edit, add
     - cart
@@ -18,6 +18,7 @@ Site layout:
   - parts-select
   
 Notes:
+  - many links, etc are only functional on year.html
   - fancybox plugin with embedded woothemes flexslider
   - interactive check-in, cart, product view, catalog
 
