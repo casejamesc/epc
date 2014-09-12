@@ -30,5 +30,7 @@ Problems:
   - responsive table, sizing issues
 
 ![Login Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/1.jpg "login")
+
 ![Check In Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/2.jpg "check-in")
+
 ![Parts Select Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/3.jpg "parts-select")
