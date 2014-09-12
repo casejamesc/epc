@@ -28,3 +28,7 @@ Problems:
   - gradient background filled the entire viewport, but did so by repeating. By default: <body> and <html> background images (gradient) fill the html element and then "flood the rest of the viewport" by repeating.
     applied background to a descendant div that covered entire canvas
   - responsive table, sizing issues
+
+![Login Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/1.jpg "login")
+![Check In Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/2.jpg "check-in")
+![Parts Select Screenshot](https://github.com/casejamesc/epc/blob/master/images/screenshots/3.jpg "parts-select")
